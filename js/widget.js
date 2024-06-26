@@ -14,7 +14,7 @@
 	  var btnStyleOff = initial_view ? "block" : "none";
 	  var btnStyleBg = initial_view ? "#f0f0f0" : "#fb923c";
 
-	  console.log('Initializing 2');
+	//   console.log('Initializing 2');
 	  //
 	  if (!document.getElementById("ch-plugin")) {
 		var n = document.createElement("div");
