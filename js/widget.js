@@ -106,20 +106,18 @@
 	
 		if (command === "boot") {
 			var pluginKey = options.pluginKey;
-			var token = options.token;
 			var xmplrName = options.xmplrName;
 			var facet = options.facet;
-			initializeWidget(pluginKey, token, xmplrName, facet);
+			initializeWidget(pluginKey, xmplrName, facet);
 		}
 	}
 	
-	function initializeWidget(pluginKey, token, xmplrName, facet) {
+	function initializeWidget(pluginKey, xmplrName, facet) {
 		// iframe에 데이터 전송
 		var iframe = document.getElementById('ch-plugin-script-iframe');
 		if (iframe && iframe.contentWindow) {
 			iframe.contentWindow.postMessage({
 				pluginKey: pluginKey,
-				token: token,
 				xmplrName: xmplrName,
 				facet: facet
 			}, '*');
