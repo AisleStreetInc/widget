@@ -6,7 +6,7 @@
 		e
 	  ) && window.navigator.cookieEnabled)
 	) {
-	  var initial_view = true;
+	  var initial_view = false;
 	  var className = initial_view
 		? "ch-plugin-script-on"
 		: "ch-plugin-script-off";
