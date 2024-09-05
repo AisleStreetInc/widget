@@ -90,13 +90,11 @@
 	}
 
     function changeView(is_view) {
-        var target = document.getElementById('ch-plugin-script');
+        var target = document.getElementById('ch-plugin');
         if(is_view) {
-            target.classList.remove('ch-plugin-script-off');
-            target.classList.add('ch-plugin-script-on');
+            target.classList.remove('ch-plugin-off');
         }else{
-            target.classList.remove('ch-plugin-script-on');
-            target.classList.add('ch-plugin-script-off');
+            target.classList.add('ch-plugin-off');
         }
     }
 	
