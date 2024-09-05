@@ -99,15 +99,35 @@
 			})(args);
 		}
 	}
+
+    function changeView(is_view) {
+        var target = document.getElementById('ch-plugin-script');
+        if(is_view) {
+            target.classList.remove('ch-plugin-script-off');
+            target.classList.add('ch-plugin-script-on');
+        }else{
+            target.classList.remove('ch-plugin-script-on');
+            target.classList.add('ch-plugin-script-off');
+        }
+    }
 	
 	function handleCommand(args) {
 		var command = args[0];
-		var options = args[1];
+		var res = args[1];
 	
 		if (command === "boot") {
-			var pluginKey = options.pluginKey;
-			var xmplrName = options.xmplrName;
-			var facet = options.facet;
+			var pluginKey = res.pluginKey;
+			var xmplrName = res.xmplrName;
+			var facet = res.facet;
+			var options = res.options || {default: 'CLOSED'};
+
+            if(options.default == 'OPENED') {
+                changeView(true);
+            }
+            else
+            if(options.default == 'CLOSED') {
+                changeView(false);
+            }
 			initializeWidget(pluginKey, xmplrName, facet);
 		}
 	}
