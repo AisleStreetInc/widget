@@ -61,7 +61,7 @@
 			  '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">'
 			),
 			e.write(
-			  '<script async type="text/javascript" src="https://aislestreetinc.github.io/widget/app/app.js" charset="UTF-8"></script>'
+			  '<script async type="text/javascript" src="https://aislestreetinc.github.io/widget/app/main.js" charset="UTF-8"></script>'
 			),
 			e.write(
 			  '<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Exemplar Chat Widget"/><title>Exemplar Chat Widget</title></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>'
