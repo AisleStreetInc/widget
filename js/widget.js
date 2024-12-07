@@ -108,7 +108,7 @@
       var xmplrName = res.xmplrName;
       var facet = res.facet;
       var options = res.options || {
-        default: "INVITE",
+        default: "CLOSED",
         message: `Come and Chat with &${xmplrName} here!`,
       };
 
